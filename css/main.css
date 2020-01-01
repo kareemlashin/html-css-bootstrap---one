@@ -1,0 +1,596 @@
+* {
+    font-family: 'Segoe UI';
+    font-size: 16px;
+}
+
+/*start header*/
+header {
+    width: 100%;
+    height: 650px;
+    background-image: url(../images/intro_bg.jpg);
+    background-size: cover;
+}
+
+/*start overly*/
+
+.overly {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+}
+
+/*start nav*/
+.bg-light {
+    background-color: transparent !important;
+}
+
+/*navbar-brand */
+.navbar-brand {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+/*nav item*/
+.nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 600;
+    color: white !important;
+}
+
+/*nav hover*/
+.nav-item {
+    position: relative;
+}
+
+.navbar-nav .nav-item .nav-link::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.5s width;
+}
+
+.navbar-nav .nav-item .nav-link:hover::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    width: 50%;
+    height: 2px;
+    background-color: #fff;
+}
+
+.active {
+    position: relative;
+}
+
+.under-line::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    width: 50%;
+    height: 2px;
+    background-color: #fff;
+}
+
+/*title*/
+header .title {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.typing {
+    position: relative;
+    animation-name: type;
+    animation-duration: 1s;
+}
+
+.typing::after {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    content: "|";
+    animation-name: type;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes type {
+    0% {
+        content: "G|";
+    }
+
+    2% {
+        content: "Gr|";
+    }
+
+    7% {
+        content: "Gra|";
+    }
+
+    10% {
+        content: "Grap|";
+
+    }
+
+    15% {
+        content: "Grap|";
+
+    }
+
+    18% {
+        content: "Graph|";
+
+    }
+
+    22% {
+        content: "Graphi|";
+
+    }
+
+    25% {
+        content: "Graphic|";
+
+    }
+
+    28% {
+        content: "Graphic D|";
+
+    }
+
+    33% {
+        content: "Graphic De|";
+
+    }
+
+    37% {
+        content: "Graphic Des|";
+
+    }
+
+    40% {
+        content: "Graphic Desi|";
+
+    }
+
+    45% {
+        content: "Graphic Desig|";
+
+    }
+
+    48% {
+        content: "Graphic Design|";
+
+    }
+
+    50% {
+        content: "Graphic Designe|";
+
+    }
+
+    52% {
+        content: "Graphic Designer|";
+
+    }
+
+    55% {
+        content: "|";
+
+    }
+
+    60% {
+        content: "f|";
+
+    }
+
+    62% {
+        content: "fr|";
+
+    }
+
+    65% {
+        content: "fro|";
+
+    }
+
+    68% {
+        content: "fron|";
+
+    }
+
+    70% {
+        content: "front|";
+
+    }
+
+    72% {
+        content: "front e|";
+
+    }
+
+    75% {
+        content: "front en|";
+
+    }
+
+    78% {
+        content: "front end|";
+
+    }
+
+    80% {
+        content: "|";
+
+    }
+
+    85% {
+        content: "C|";
+
+    }
+
+    88% {
+        content: "Ce|";
+
+    }
+
+    90% {
+        content: "Ceo|";
+
+    }
+
+    95% {
+        content: "CEO D|";
+
+    }
+
+    98% {
+        content: "CEO DE|";
+
+    }
+
+    100% {
+        content: "CEO DEF|";
+
+    }
+}
+
+.title h1 {
+    font-size: 72px;
+    font-weight: 600;
+}
+
+.title p {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.sec2 {
+    background-color: #f1f1f1;
+}
+
+.sec-2 {
+    background-color: white;
+}
+
+.im img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+section .disc ul {
+    list-style-type: none;
+    line-height: 30px;
+}
+
+.sec-2 .disc li {
+    color: #4e4e4e;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+section .disc ul span {
+    color: #1e1e1e;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.sec-3 {
+    position: relative;
+}
+
+section .sec-3 span::after {
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0px;
+    width: 20%;
+    height: 3px;
+    background-color: #0078ff;
+}
+
+section .disc2 p {
+    color: #4e4e4e;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.sec-3 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.skil p {
+    color: #1e1e1e;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.skil span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #4e4e4e;
+
+}
+
+.pull-right {
+    float: right;
+}
+.sec-4{
+    background-color: #f1f1f1;
+
+}
+.sec-4 .title-3
+{
+    position: relative;
+}
+section .title-3 p::after {
+    content: "";
+    position: absolute;
+    top:100%;
+    left: 47.5%;
+    width: 5%;
+    height: 3px;
+    background-color: #0078ff;
+}
+.sec-4 .card1
+{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:  0px 8px 3px rgba(0, 0, 0, 0.1);
+}
+.sec-4 .card1 i
+{
+    border: 5px solid #0078ff;
+    border-radius: 50%;
+    padding: 30px;
+font-size: 50px;
+}
+.sec-4 .card1:hover i
+{
+    background-color: #0078ff;
+    box-shadow: 0 0 0 10px #cde1f8;
+    border-radius: 50%;
+    padding: 30px;
+    font-size: 50px;
+color:white;
+}
+.cover2
+{
+width: 100%;
+background-image: url(../images/post_3.jpg);
+background-size: cover;
+background-position: center center;
+background-attachment: fixed;
+}
+ul{
+    padding-inline-start: 0px !important;
+}
+.overly2
+{
+    width: 100%;
+    height: 100%;
+background-color:  rgba(0, 107, 230,0.6);
+
+}
+.card-3
+{
+    font-size: 28px;
+    color: white;
+text-align: center;
+}
+.cover2 .row
+{
+    height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.card-3 i
+{
+    border:10px solid #cde1f8;
+    border-radius: 50%;
+padding: 20px;
+margin-bottom: 20px;
+}
+.sec-5
+{
+background-color: #f1f1f1;
+}
+.title-4
+{
+    position: relative;
+}
+section .title-4::after {
+    content: "";
+    position: absolute;
+    top:100%;
+    left: 48%;
+    width: 4%;
+    height: 5px;
+    background-color: #0078ff;
+}
+.card2
+{
+background-color: white;
+}
+.card2 i
+{
+color:#0078ff;
+border: 1px solid #0078ff;
+padding: 10px;
+border-radius: 50%;
+}
+.disc-7-span
+{
+    color: #0078ff;
+}
+.card2 img
+{
+transition: 1s transform;
+}
+.card2:hover img
+{
+    transform: scale(1.1);
+}
+.cover3
+{
+    width: 100%;
+    background-image: url(../images/overlay_bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.slide img
+{
+border-radius: 50%;
+}
+.carousel-item
+{
+    text-align: center;
+}
+.carousel-indicators
+{
+position: absolute;
+top: 100%;
+}
+.card-4
+{
+    color: white;
+    margin: auto;
+}
+
+.card-4 i
+{
+    font-size: 32px;
+    width: 52px;
+    height: 52;
+    color: #2e7ede;
+background-color: white;
+border-radius: 50%;
+padding: 10;
+}
+.im3 img
+{
+    border-radius: 50%;
+}
+.card-body{
+    position: relative;
+}
+.card .btn
+{
+position: absolute;
+top:-25px;
+left: 38%;
+}
+@media (min-width: 571px) and (max-width: 1000px) {
+
+    .card .btn
+    {
+    position: absolute;
+    top:-25px;
+    left: 30%;
+    }
+  }
+  .card-footer img
+  {
+border-radius: 50%;
+}
+.last{
+    background-image: url(../images/overlay_bg.jpg);
+width: 100%;
+}
+.last .container
+{
+    background-color: white;
+}
+.last .message::after {
+    content: "";
+    position: absolute;
+
+    left: 6%;
+    width: 20%;
+    height: 5px;
+    background-color: #0078ff;
+}
+textarea
+{
+    width: 100%;
+    padding: 10px;
+}
+.last
+{
+display: flex;
+justify-content:center;
+align-items: center;
+}
+.last ul
+{
+list-style-type: none;
+line-height: 40px;
+color:#0078ff;
+}
+.last .icon li
+{
+    display: inline;
+
+}
+.icon li i
+{
+    padding: 10px;
+border: 5px solid #0078ff;
+border-radius: 50%;
+font-size: 20px;
+color: black;
+}
+.icon li:hover i
+{
+    background-color: #0078ff;
+    border: 5px solid #cde1f8;
+    padding: 10px;
+color:white;
+}
+.copy
+{
+color: white;
+}
+.footer-card img
+{
+    border-radius: 50%;
+}
+
+.card-footer img
+{
+    width: 32px;
+    height: 32px;
+}
+.card-footer .min
+{
+float: right;
+}
